@@ -1,0 +1,128 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#topbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #7EC0EE;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 13px;
+    font-family: 'oxygen', sans-serif;
+}
+#topbar li {
+    margin-left: 10px;
+}
+#main_nav {
+    background-color:#035D58;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px;
+}
+#nav_logo {
+    width: 40px;
+    height: 50px;
+    margin-right: 50px;
+}
+.nav_link {
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'oxygen', sans-serif;
+    color: white;
+}
+.nav_link:hover {
+    background-color: #073937
+}
+.hamburger {
+    display: none;
+}
+#hamburger_menu-text {
+    display: none;
+}
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 50px;
+    margin-bottom: 35px;
+    font-family: 'oxygen', sans-serif;
+    color: white;
+    text-align: center;
+    background-color: #035D58;
+}
+
+/* MOBILE VERSION */
+@media (max-width: 1000px) {
+    #topbar {
+        display: none;
+    }
+    #main_nav {
+        justify-content: flex-end;
+        color: white;
+    }
+    #hamburger_container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #hamburger_menu-text {
+        display: block;
+        margin-right: 20px
+    }
+    #hamburger_icons {
+        display: flex;
+        flex-direction: column;
+    }
+    .hamburger {
+        display: block;
+        color: white;
+    }
+    .nav_link {
+        display: none;
+    }
+}
