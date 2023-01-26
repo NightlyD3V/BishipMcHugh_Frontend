@@ -21,6 +21,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    font-family: "oxygen", arial, sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -29,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    background: #FFFCEE;
 }
 ol, ul {
 	list-style: none;
@@ -52,7 +54,6 @@ table {
     text-align: center;
     font-size: 0.8rem;
     padding: 13px;
-    font-family: 'oxygen', sans-serif;
 }
 #topbar li {
     margin-left: 10px;
@@ -73,6 +74,7 @@ table {
     padding: 10px;
     text-decoration: none;
     font-family: 'oxygen', sans-serif;
+    font-size: 1rem;
     color: white;
 }
 .nav_link:hover {
@@ -84,16 +86,35 @@ table {
 #hamburger_menu-text {
     display: none;
 }
+#hero_image-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    z-index: -1;
+}
+#hero_image {
+    width: 100%;
+}
+#hero_image-bottom {
+    padding: 5px;
+    background-color: #FAD21A;
+}
+
 footer {
     position: absolute;
     bottom: 0px;
     width: 100%;
+    overflow: hidden;
     padding: 50px;
     margin-bottom: 35px;
-    font-family: 'oxygen', sans-serif;
     color: white;
-    text-align: center;
     background-color: #035D58;
+}
+
+footer h1 {
+    text-align: center;
 }
 
 /* MOBILE VERSION */
@@ -121,6 +142,10 @@ footer {
     .hamburger {
         display: block;
         color: white;
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 3px 0;
     }
     .nav_link {
         display: none;
