@@ -2,17 +2,23 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <link rel="stylesheet" href="../css/index.css">
+        <style>
+            @font-face {
+                font-family: Marcellus;
+                src: url(../fonts/Marcellus-Regular.ttf);
+            }
+        </style>
         <title>Bishop</title>
     </head>
     <body>
         <!-- TOPBAR NAVIGATION -->
         <nav id="topbar_wrapper">
             <ol id="topbar">
-                <li>GUEST</li>
+                <li style="border: 2px solid back;">GUEST</li>
                 <li>GMAIL</li>
                 <li>GOOGLE CLASSROOM</li>
                 <li>RENWEB</li>
+                <li>STAFF RESOURCES</li>
             </ol>
         </nav>
         <!-- DESKTOP NAVIGATION -->
@@ -21,6 +27,11 @@
                 <a href="#"><img id="nav_logo" src="https://cdn5-ss6.sharpschool.com/UserFiles/Servers/Server_2555674/Templates/logo.png"></a>
                 <li><a class="nav_link" href="#">Home</a></li>
                 <li><a class="nav_link" href="#">About</a></li>
+                <!-- ABOUT DROPDOWN CONTENT -->
+                <div class="dropdown_content">
+                    <a href="#">Mission & Vision</a>
+                    <a href="#">Accreditation</a>
+                </div>
                 <li><a class="nav_link" href="#">Inquire</a></li>
                 <li><a class="nav_link" href="#">Tour</a></li>
                 <li><a class="nav_link" href="#">Academic</a></li>
@@ -37,6 +48,10 @@
                         <div class="hamburger"></div>
                         <div class="hamburger"></div>
                     </div>
+                    <!-- MENU ITEMS -->
+                    <div id="hamburger_menu-items">
+
+                    </div>
                 </nav>
             </ol>
         </nav>
@@ -45,8 +60,43 @@
             <img id="hero_image" alt="birdeye view of school" src="../images/hero.jpg"></img>
             <div id="hero_image-bottom"></div>
         </div>
+        <!-- MIDDLE CONTENT -->
+        <section id="middle_content">
+            <div id="left_sidebar-container">
+                <div id="left_sidebar">
+                    <h1 class="school_name">BISHOP</h1>
+                    <h1 class="school_name">McHUGH</h1>
+                    <p>Regional Catholic School</p>
+                    <img id="main_logo" src="https://cdn5-ss6.sharpschool.com/UserFiles/Servers/Server_2555674/Templates/logo.png">
+                </div>
+                <div id="triangle_down"></div>
+                <div id="left_sidebar-text">
+                    <p>Accredited by the Middle States Association of College and Schools</p>
+                    <p>2015,2017,2018,2019 "Most Loved" of Cape May County</p>
+                </div>
+                <div class="triangle_left"></div>
+            </div>
+            <div id="image_slider-container">
+                <img src="https://cdn5-ss6.sharpschool.com/UserFiles/Servers/Server_2555674/Image/IMG_5942.jpeg" alt="7th and 8th">
+                <div id="cta_video">
+                    
+                </div>
+                <h1>Welcome Back BMRCS!</h1>
+            </div>
+        </section>
+        <!-- BOTTOM CONTENT -->
+        <section id="bottom_info">
+
+        </section>
         <footer>
-            <h1>Bishop McHugh &copy NightlyD3V 2023</h1>
+            <p>2221 Rt. 9 North, Cape May Court House, NJ 08210</p>
+            <p>Phone (609) 624-1900</p>
+            <p>Fax (609) 624-9696</p>
+            <p><a id="copyright" href="https://www.github.com/NightlyD3V">&copy NightlyD3V</a> 2023</p>
+            <div id="footer_info"></div>
         </footer>
+
+        <script src="../js/index.js"></script>
+        <link rel="stylesheet" href="../css/index.css">
     </body>
 </html>
