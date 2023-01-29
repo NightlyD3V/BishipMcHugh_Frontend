@@ -59,6 +59,9 @@ table {
 #topbar li {
     margin-left: 10px;
 }
+#topbar li a {
+    text-decoration: none;
+}
 #main_nav {
     background-color:#035D58;
     display: flex;
@@ -69,7 +72,12 @@ table {
     box-shadow: 0px 15px 10px -15px #111;
 }
 #active {
-    background-color:#073937
+    background-color:#073937;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#about_dropdown-content li{
+    display: none;
 }
 #nav_logo {
     width: 40px;
@@ -84,12 +92,17 @@ table {
     color: #FFFCEE;
 }
 .nav_link:hover {
-    background-color: #073937
+    background-color: #073937;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .hamburger {
     display: none;
 }
 #hamburger_menu-text {
+    display: none;
+}
+#hamburger_menu-items {
     display: none;
 }
 #hero_image-container {
@@ -116,7 +129,8 @@ table {
     margin-bottom: 100px;
 }
 #left_sidebar-container {
-    max-width: 300px;
+    max-width: 340px;
+    margin-left: 90px;
 }
 #left_sidebar {
     text-align: center;
@@ -136,14 +150,15 @@ table {
 #triangle_down {
     width:0;
     height: 0;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
+    border-left: 170px solid transparent;
+    border-right: 170px solid transparent;
     border-top: 50px solid #FAD21A;
 }
 #left_sidebar-text {
     position: relative;
     bottom: 50px;
     height: 250px;
+    border-end-start-radius: 20px;
     background-color:#035D58;
     color: white;
     padding: 25px;
@@ -161,7 +176,18 @@ table {
     margin-left: 50px;
     margin-top: 100px;
 }
-
+#middle_right-container h1 {
+    font-size: 2rem; 
+    font-weight: bold;
+    text-align: center;
+    padding: 25px;
+}
+#middle_right-container h2 {
+    font-size: 1.5rem;
+    background-color: #FAD21A;
+    padding: 20px;
+    border-radius: 10px;
+}
 #image_slider-container {
     max-height: 350px;
     max-width: 600px;  
@@ -174,14 +200,15 @@ table {
     box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.53);
 }
 #image_slider-container div img {
+    width: 100%;
     background-color: #073937; 
-    object-fit: cover;
+    object-fit: fill;
 }
 #cta_video {
     background-color: #FAD21A;
     width: 100%;
     height: 350px;
-    margin-top: 15px;
+    margin-top: 50px;
 }
 footer {
     width: 100%;
@@ -232,9 +259,7 @@ footer p {
     .nav_link {
         display: none;
     }
-    #about_dropdown-content {
-
-    }
+    
     #hero_image-container {
         position: relative;
         
@@ -247,23 +272,20 @@ footer p {
     #triangle_down {
         width:0;
         height: 0;
-        border-left: 280px solid transparent;
-        border-right: 280px solid transparent;
+        border-left: 0px solid transparent;
+        border-right: 0px solid transparent;
         border-top: 50px solid #FAD21A;
     }
     #left_sidebar-container {
-        max-width: 100%;
+        min-width: 100%;
     }
     #middle_right-container {
         background-color: #073937;
-        
         margin: 0 auto;
         min-width: 100%;
     }
     #image_slider-container {
         margin: 0 auto;
-    }
-    #image_slider-container {
         margin-bottom: 100px;
         width: 100vw;
     }

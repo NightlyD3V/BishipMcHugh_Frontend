@@ -21,18 +21,3 @@ $(document).ready(() => {
         lazyLoad: true,
     })
 })
-
-// let slider_images = document.querySelectorAll(".image_slider-images")
-// let imageArr = Array.from(slider_images)
-// console.log(imageArr)
-// function nextImage() {
-//     for(let index=0; index < imageArr.length; index++) {
-//         console.log(index)
-//         imageArr[index].style = 'display: block;'
-//         setTimeout(() => {
-//             imageArr[index.style = 'display: none;']
-//             requestAnimationFrame(nextImage)
-//         }, 3000)
-//     }
-// }
-// window.requestAnimationFrame(nextImage)
